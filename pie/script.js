@@ -1,4 +1,4 @@
-google.charts.load('current', { 'packages': ['corechart'] });
+google.charts.load('current', { 'packages': ['corechart'], 'language': 'pt' });
 
 function desenharPizza() {
   var tabela = new google.visualization.DataTable();
@@ -33,7 +33,6 @@ function desenharPizza() {
 
   var grafico = new google.visualization.PieChart(document.getElementById('graficoPizza'));
   grafico.draw(tabela, opcoes);
-
 }
 
 google.charts.setOnLoadCallback(desenharPizza);
