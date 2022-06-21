@@ -3,13 +3,24 @@
 <head>
   <meta charset="utf-8">
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="charts.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {
+      'packages': ['corechart'],
+      'language': 'pt'
+    });
+    google.charts.setOnLoadCallback(desenharGraficos);
+  </script>
   <title>Document</title>
 </head>
 
 <body>
   <div id="graficoPizza"></div>
   <div id="graficoLinha"></div>
-  <script src="charts.js"></script>
+  <div id="graficoColuna"></div>
+  <div id="graficoColunaSurpresa"></div>
+  <div id="graficoBarrasJson"></div>
 </body>
 
 </html>
